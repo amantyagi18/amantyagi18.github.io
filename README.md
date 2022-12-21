@@ -129,8 +129,7 @@
                     
                 </button>
                 <button class="GFG" onclick="window.location.href = 'https://forms.office.com/r/eKQVKmGyH6';">
-                    Video Editor<meta http-equiv="X-UA-Compatible" content="IE=edge">
-                    <meta http-equiv="refresh" content="3; url=www.forms.microsoft.com">
+                    Video Editor
                 </button>
                 <!-- <h2>Bhaskar Gupta</h2> -->
             </div>
