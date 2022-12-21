@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<style>
+		p {
+		color: green;
+		}
+	</style>
+	<p>Download your file here
+	<p>
+		<a href="resume_template 2.docx" download="YOUR CV">
+		<button type="button">Download</button>
+		</a>
+</body>
+</html>
