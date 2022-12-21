@@ -141,3 +141,21 @@
 </body>
 
 </html>
+
+excel vba code
+Sub word_macro()
+Dim w_app As Word.Application, w_doc As Word.Document, sht As Worksheet, i As Integer
+Set sht = ThisWorkbook.Sheets(1)
+Set w_app = New Word.Application
+For i = 2 To 4
+Set w_doc = w_app.Documents.Open(Filename:="C:\Users\Khushi\OneDrive - Pukaar\Documents\project1\manager_resume.docx", ReadOnly:=True)
+w_app.Visible = True
+w_doc.Visible = True
+w_doc.Bookmarks("customer_name").Raneg.Text = sht.Cells(i, 1)
+w_doc.Bookmarks("address").Range.Text = sht.Cells(i, 2)
+w_doc.SaveAs2 "C:\Users\Khushi\OneDrive - Pukaar\Documents\project1" & "Notice360for" & sht.Cells(i, 1)
+Next
+MsgBox "done..", vbInformation
+
+End Sub
+w_app.Quit
